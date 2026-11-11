@@ -1,20 +1,21 @@
 # Alita
 
-> Voice-first personal AI assistant that runs 100% locally, in Brazilian Portuguese.
+> Voice-first personal AI assistant that runs locally by default, in Brazilian Portuguese.
 
 ## What it is
 
 Alita is a personal AI assistant you talk to. You call her by name ("Alita, …"),
 she answers out loud — and she only responds to the **owner's voice**, using
-local speaker verification. Everything runs on my own computer: speech
-recognition, the language model and the voice. It is built on top of
+local speaker verification. Speech recognition, voice verification and the
+voice run on my own computer; the language model is local by default, with
+optional opt-in cloud models. It is built on top of
 [OpenJarvis](https://github.com/open-jarvis/OpenJarvis) (Stanford, Apache 2.0).
 
 ## Why
 
-I wanted a home assistant that keeps my voice, my conversations and my API keys
-on my own machine, works offline in Portuguese, and answers only to me —
-without sending audio to a cloud service.
+I wanted a home assistant that keeps my voice and my API keys on my own machine
+— and, by default, my conversations too — works offline in Portuguese, and
+answers only to me, without sending audio to a cloud service.
 
 ## What I built on top of OpenJarvis
 
@@ -36,7 +37,7 @@ TypeScript/React (web UI)
 ## Privacy by design
 
 The voice profile and the cloud keys are stored outside the project folder, in
-the user's configuration directory. Nothing about the owner's voice is ever
+the user's configuration directory, outside the repository — so they are never
 committed to version control.
 
 ## What I learned
@@ -55,6 +56,6 @@ reach me through my GitHub profile.
 
 ---
 
-🇧🇷 Assistente de IA pessoal por voz, 100% local e em português, que só responde à voz do dono.
+🇧🇷 Assistente de IA pessoal por voz, local por padrão e em português, que só responde à voz do dono.
 
 © 2026 Felipe Mendes. All rights reserved. OpenJarvis is © its authors, Apache 2.0.
